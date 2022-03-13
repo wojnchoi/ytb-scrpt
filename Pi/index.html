@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pi Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <Header>
+            <h1 class="title"><a href="index.html" style="text-decoration: none; color: Black;">파이(π) 구하는 다양한 방법</a></h1>
+            <nav>
+                <button onclick="Update(1)">블럭충돌</button>
+                <button onclick="Update(2)">난수</button>
+                <button onclick="Update(3)">아르키메데스</button>
+            </nav>
+          
+        </Header>
+        <div id="main">
+          <img id="logo" src="picture.png" alt="Pi man">
+            <div id="show-content"></div>
+            <div id="outs"></div>
+            <div id="test"></div>
+        </div>
+    </div>
+    
+	<script src="index.js"></script>
+  <script src="collision.js"></script>
+  </body>
+</html>
